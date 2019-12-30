@@ -144,7 +144,6 @@ Return<void> FingerprintInscreen::onShowFODView() {
 
 Return<void> FingerprintInscreen::onHideFODView() {
     set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-    this->mFodCircleVisible = false;
     return Void();
 }
 
