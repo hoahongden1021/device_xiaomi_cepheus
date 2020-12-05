@@ -84,6 +84,7 @@ namespace implementation {
 FingerprintInscreen::FingerprintInscreen() {
     this->mFodCircleVisible = false;
     xiaomiFingerprintService = IXiaomiFingerprint::getService();
+    xiaomiDisplayFeatureService = IDisplayFeature::getService();
 
     std::thread([this]() {
         int fd = open(FOD_UI_PATH, O_RDONLY);
