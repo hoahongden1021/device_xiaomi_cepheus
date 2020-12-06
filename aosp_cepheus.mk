@@ -33,3 +33,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="cepheus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# FOD
+TARGET_HAS_FOD := true
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
